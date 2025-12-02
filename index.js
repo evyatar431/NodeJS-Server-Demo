@@ -1,6 +1,6 @@
-const express = require("express");
-const morgan = require("morgan");
-const bodyParser = require("body-parser");
+import express from "express";
+import morgan from "morgan";
+import bodyParser from "body-parser";
 
 const app = express();
 
@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.post("/api/cars", (req, res) => {
     const { brand, model } = req.body;
 
-    res.send(`You chose ${brand} ${model}. `);
+    res.send(`You chose ${brand} ${model}.`);
 });
 
 app.listen(3000, () => {
