@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +20,7 @@
   "homepage": "https://github.com/evyatar431/NodeJS-Server-Demo#readme",
   "dependencies": {
     "body-parser": "^2.2.1",
+    "cors": "^2.8.5",
     "express": "^5.2.1",
     "morgan": "^1.10.1"
   }
